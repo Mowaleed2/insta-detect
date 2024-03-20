@@ -1,0 +1,346 @@
+/* Global Responsive Elements */
+@media (max-width: 1000px) {
+    /* Header */
+     .profile-button , .si {
+        display: none;
+    }
+    .upper-header{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .checko, .checko i,  header ul li{
+        display: block;
+        cursor: pointer;
+    }
+    header{
+        margin: auto;
+        width: 90%;
+    }
+    .lower-header{
+        display: none;
+    }
+    .lower-header2 ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+        height: 300px;
+        text-align: center;
+        margin-left: 0;
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        z-index: 3;
+        background: rgba( 255, 255, 255, 0.55);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+        backdrop-filter: blur( 4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba( 255, 255, 255, 0.18);
+        border-radius: 50px 10px 10px 50px;
+        transition: 0.5s;
+    }
+    .lower-header2 ul li ,     .lower-header2 ul li a{
+        width: 100%;
+    }
+    header ul li a{
+        display: inline-block;
+        padding: 0;
+        color: black;
+        transition: 0.5s all;
+    }
+    header ul li:hover > a{
+        color: #7ba9d5;
+    }
+    header ul li:hover{
+        border-bottom: none;
+    }
+    .logot:hover{
+        color: red;
+    }
+    #check:checked ~ section ul{
+        right: 0;
+    }
+    .circle{
+        margin-right: 70px;
+    }
+
+
+    /* Footer */
+    footer img{
+        width: 25px;
+    }
+    footer h2{
+        font-size: 12px;
+    }
+
+    .block-flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Home */
+    .sec1 .title{
+        font-size: 3em;
+        max-width: 80%;
+        margin: 0 auto;
+}
+.container-fluid{
+    height: auto;
+    flex-direction: column;
+}
+
+.big-tittle{
+    font-size: 2rem;
+}
+.single-fun{
+    justify-content: space-between;
+    width: 100%;
+}
+.fun-section{
+    width : 60%
+}
+.row-hero{
+    justify-content: space-evenly;
+}
+.grid-x{
+    width: 90%;
+    flex-direction: column;
+}
+.grid-x:hover{
+    transform: scale(1);
+}
+.cell{
+    width: 100%;
+    padding: 10px ;
+}
+.large-7{
+    width: 100% !important;
+}
+.adjacent-large-text{
+    font-size: 2rem;
+}
+.story-content-title{
+    font-size: 1.5rem;
+    overflow: scroll;
+}
+.backG-heigh{
+    height: auto;
+}
+.container-title{
+    font-size: 2rem;
+}
+.gradient-cards{
+    flex-wrap: wrap;
+    margin: auto;
+}
+.service-card{
+    width: 90%;
+    margin-bottom: 2rem;
+}
+.grid{
+    flex-direction: column;
+}
+.card-miss , .card-question{
+    width: 85% !important; 
+    margin-bottom: 10px;
+}
+
+    /* Services */
+    .services-title , .name-page, .storys-title, .Mri-title{
+        font-size: 3rem;
+    }
+    .line2{
+        height: 10px;
+    }
+    .services{
+        max-height: 50vh; 
+    }
+    .mri-scan{
+        width: 25%;
+    }
+    .services h2 , .services h3{
+        font-size: 24px;
+    }
+
+    /* Contact Us */
+    .form-horizontal {
+        width: 60vw;
+    }
+
+    /* Mri */
+    .mri-header{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    /* Mri History */
+    .mri-h-row{
+        gap: 10% !important;
+    }
+    .mri-h-col{
+        width: 40%;
+        margin-bottom: 50px;
+    }
+    .mri-h-card-title{
+        font-size: 24px;
+    }
+
+
+        /* Share Form */
+        .text{
+            font-size: 100px !important;
+        }
+        #storyForm{
+            width: 100%;
+        }
+        .form-row{
+            flex-direction: column;
+        }
+        .input-data{
+            margin-bottom: 5% !important;
+
+        }
+        .input-data input{
+            font-size: 3rem !important;
+            color: rgb(0, 60, 255);
+        }
+        .input-data label , .form-row .input label{
+            font-size: 3rem !important;
+        }
+        select{
+            font-size: 24px;
+        }
+        .form-row .input input{
+            font-size: 2rem;
+        }
+        .form-row .input label{
+            display: block;
+        }
+        #submitStory{
+            font-size: 3rem;
+            font-weight: 600;
+            width: 40%;
+            height: 10%;
+            border: 2px solid black;
+        }
+        .exit-icon-special{
+            width: 80px !important;
+            height: 80px !important;
+        }
+        .exit-icon {
+            width: 50px;
+            height: 50px;
+        }
+}
+
+@media (max-width : 800px) {
+    /* Global */
+    .circle , .circle img{
+        width: 50px;
+        height: 50px;
+        color: none;
+    }
+    #header-logo{
+        font-size : 24px
+    }
+    .button{
+        width : 100px
+    }
+
+
+    /* Home */
+    .sec1{
+        margin-top: 4rem;
+        height: 30vh;
+        display: block;
+    }
+    .sec1 .title{
+        font-size: 2em;
+}
+.big-tittle .title{
+font-size: 2rem;
+}
+
+    /* Services */
+    .services{
+        width: 45%;
+    }
+
+    /* Mri */
+    .section {
+        width: 100vw !important;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+     .mri-center-card{
+        width: 50vw !important;
+    }
+    .mri-center-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right-column{
+        width: 50% !important;
+margin: 0 auto !important;
+    }
+
+    /* Community */
+    .card{
+        width: 40%;
+    }
+    .card-body .card-title , .card-body .card-text{
+        text-align: left;
+        margin: 5px 0 5px 0;
+
+    }
+    .popup-box{
+        height: 90vh;
+        width: 80vw;
+    }
+    .popup-box > img{
+        height: 50%;
+    }
+
+
+    /* Reg and Login */
+    .form{
+        width: 100%;
+        padding: 0 !important;
+    }
+    .form input{
+        width: 90% !important;
+    }
+    .link{
+        font-size: 1rem !important;
+        text-align: center !important;
+    }
+}
+
+@media (max-width : 600px){
+    
+}
+/* Home */
+
+/* Services */
+
+/* Contact Us */
+
+/* Stories */
+
+/* Share Story */
+
+/* Mri Center */
+
+/* History of Mri */
+
+
+/* Content Of Home Hereeeeee */

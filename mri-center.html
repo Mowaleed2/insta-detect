@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mri center</title>
+        <link rel="shortcut icon" href="images/brain.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Responsive.css">
+    </head>
+    <header class="mri-header">
+        <!-- Server-side include for header.php -->
+        <?php include('header.php'); ?>
+        <div class="checko">
+            <input type="checkbox" id="check">
+            <label for="check"><i class="fas fa-bars"></i></label>
+            <section class="lower-header2 ">
+                <ul>
+                    <li><a href="/Web project/index.html" class="li-links ">HOME</a></li>
+                    <li><a href="/Web Project/Services.php " class="li-links ">SERVICES</a></li>
+                    <li><a href="/Web Project/ContactUs.html " class="li-links ">CONTACT US</a></li>
+                    <li><a href="/Web Project/Community.html" class="li-links ">Community</a></li>
+        <?php include('li.php'); ?>
+                </ul>
+            </section>
+            </div>
+    </header>
+    <body>
+        <img class="backG-img" src='images/1.jpg' alt=" ">
+        <h2 class="Mri-title">
+            Mri Center
+        </h2>
+        <span class="line2"></span>
+
+        <div class="section">
+            <form class="mri-center-card">
+                <div class="card-about">
+                    <h1>MRI</h1>
+                    <img src="images/profile.png" alt id="profile-pic">
+                    <label for="input-file" class="hover-3 mri-lable">Upload image</label>
+                    <input type="file" accept="image/jpeg, image/png, image/jpg"
+                        id="input-file">
+                    <button onclick="submitImage()" class="submit-button hover-3"
+                        style="display: none;">Submit
+                    </button>
+                </div>
+            </form>
+            <div class="right-column">
+                <div class="title">
+                    <h1>Result</h1>
+                <p id="result">...</p>
+                </div>
+            </div>
+        </div>
+        <a onclick="back()" class="exit-icon">
+            <img class="exit-icon" src="images/power-off.png" alt>
+        </a>
+        <script src="js/mri.js"></script>
+    </body>
+    <footer>
+
+        <!-- put your foooter -->
+
+    </footer>
+
+</html>
